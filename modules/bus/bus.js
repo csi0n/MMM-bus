@@ -8,7 +8,7 @@ Module.register("bus",{
 		direction:1,
 		lineid:"073500",
 		name:"735",
-		stopid:4,
+		stopid:7,
 		refreshInterval:1000*3,
 		currentBusInfo:{}
 	},
@@ -33,6 +33,7 @@ Module.register("bus",{
 		}
 	},
 	processBusInfo:function (busInfo) {
+		console.log(busInfo);
 		this.config.currentBusInfo=busInfo;
 	},
 	getDom:function(){

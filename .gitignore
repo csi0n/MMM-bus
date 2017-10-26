@@ -74,3 +74,7 @@ Temporary Items
 *.orig
 *.rej
 *.bak
+
+
+.idea
+.github

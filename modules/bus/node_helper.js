@@ -33,9 +33,12 @@ module.exports = NodeHelper.create({
 			url: myUrl,
 			method: "GET"
 		}, function (error, response, body) {
-			if (!error && response.statusCode == 200) {
-				self.sendSocketNotification("DATA", body);
-			}
+            self.sendSocketNotification("DATA", body);
+			// if (!error && response.statusCode === 200) {
+			//
+			// }else {
+			// 	self.sendSocketNotification("DATA",body)
+			// }
 		});
 
 		setTimeout(function() { self.getData(); }, this.config.refreshInterval);
